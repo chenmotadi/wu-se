@@ -11,6 +11,6 @@ public class HelloWorld3 {
         // 变量的值是静态方法getMessage的返回值
         String s = getMessage();
         // 控制台Console打印变量s的值，然后换行
-        System.out.println(s);
+        System.out.println("kan");
     }
 }
