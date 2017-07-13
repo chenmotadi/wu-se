@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kongzhu.wupeiyang.mapper.CourseMapper">
+	<select id="selectCourseList" resultType="com.kongzhu.wupeiyang.entity.Course">
+  		select * from course;
+  	</select>
+	<select id="selectCourse" parameterType="String" resultType="int">
+	select id from course where course_name = #{courseName};
+	</select>
+</mapper>
